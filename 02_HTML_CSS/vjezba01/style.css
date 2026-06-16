@@ -2,3 +2,7 @@ body{
     background-color:darkgoldenrod;
     color:blueviolet;
 }
+a:link {
+    color: red;
+    background-color: white;
+}
