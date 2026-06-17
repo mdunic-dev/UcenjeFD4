@@ -27,5 +27,14 @@ body{
 
 padding: 1rem 2rem;
 background-color:var(--pozadina-container);
+}
 
+h1{
+    text-align:center;
+    font-family: monospace;
+}
+#lista {
+    border: 2px dashed black;
+    border-radius: 0.5rem;
+    padding: 2rem;
 }
