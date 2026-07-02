@@ -1,0 +1,18 @@
+body {
+    background-color: antiqueWhite;
+    background-image: url('../img/Slika4.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    
+}
+
+@font-face {
+    font-family: 'EdunovaFont';
+    src: url('../fonts/CabinetGrotesk-Regular.woff2') format('woff2');
+}
+h1 {
+    font-family: 'EdunovaFont', 'Arial',sans-serif;
+}
