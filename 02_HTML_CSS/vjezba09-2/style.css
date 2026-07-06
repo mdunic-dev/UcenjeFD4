@@ -1,0 +1,241 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#f6f7fb;
+
+    color:#24324a;
+
+}
+
+/* HEADER */
+
+header{
+
+    height:70px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 40px;
+
+}
+
+.logo{
+
+    font-weight:600;
+
+}
+
+nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    color:#24324a;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+}
+
+.menu{
+
+    border:none;
+
+    background:none;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+}
+
+/* HERO */
+
+.hero{
+
+    max-width:850px;
+
+    margin:70px auto;
+
+    text-align:center;
+
+    padding:0 20px;
+
+}
+
+.hero h1{
+
+    font-size:52px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    color:#6b7280;
+
+    line-height:1.6;
+
+}
+
+/* CARDS */
+
+.cards{
+
+    max-width:1200px;
+
+    margin:80px auto;
+
+    padding:0 20px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.card{
+
+    height:120px;
+
+    background:white;
+
+    border:1px solid #e6e8ef;
+
+    border-radius:12px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.03);
+
+    transition:.25s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+/* FOOTER */
+
+footer{
+
+    text-align:center;
+
+    color:#6b7280;
+
+    margin:70px 0;
+
+}
+
+
+/* ===========================
+        TABLET
+=========================== */
+
+@media(max-width:991px){
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.cards{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+/* ===========================
+        MOBITEL
+=========================== */
+
+@media(max-width:768px){
+
+header{
+
+    padding:20px;
+
+}
+
+nav{
+
+    gap:15px;
+
+}
+
+.hero{
+
+    margin:50px auto;
+
+}
+
+.hero h1{
+
+    font-size:34px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+.card{
+
+    height:100px;
+
+}
+
+}
