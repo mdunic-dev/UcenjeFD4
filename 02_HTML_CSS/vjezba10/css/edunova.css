@@ -1,0 +1,11 @@
+.brand .logo{
+    width:28px;
+    height: 28px;
+    border-radius: 20px;
+    background:#f0f;
+    position: relative;
+    flex-shrink: 0;
+}
+.section-tag .pip {
+    background: #f0f;
+}
