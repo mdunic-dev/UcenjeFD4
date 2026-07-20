@@ -1,4 +1,4 @@
-
+"use strict";
 document.getElementById('btnRun').addEventListener('click', () => {
     // Dohvaćanje vrijednosti iz inputa 
     const a = document.getElementById('valA').value
@@ -13,7 +13,9 @@ document.getElementById('btnRun').addEventListener('click', () => {
     if (task === '1') {
         // Početak 1. zadatka
         // 1. Zbrajanje brojeva: Zbroji A i B (konverzija u Number)
-
+const aBroj = Number (a)
+const bBroj = Number (b)
+rezultat = aBroj + bBroj
     
         // Kraj 1. zadatka
     }
@@ -21,6 +23,8 @@ document.getElementById('btnRun').addEventListener('click', () => {
     if (task === '2') {
         // Početak 2. zadatka
         // 2. Konkatenacija: Spoji A i B kao tekst (String)
+
+        rezultat = a+b
 
 
         // Kraj 2. zadatka
@@ -30,7 +34,14 @@ document.getElementById('btnRun').addEventListener('click', () => {
     if (task === '3') {
         // Početak 3. zadatka
         // 3. Aritmetika i zagrade: Izračunaj (A + B) * C - D
+const aBroj = Number (a)
+const bBroj = Number (b)
+const cBroj = Number (c)
+const dBroj = Number (d)
 
+rezultat1 = aBroj + bBroj
+rezultat2 = rezultat1 * cBroj
+rezultat = rezultat2 - dBroj
 
         // Kraj 3. zadatka
         
@@ -40,6 +51,10 @@ document.getElementById('btnRun').addEventListener('click', () => {
         // Početak 4. zadatka
         // 4. Modulo operator: Ostatak pri dijeljenju A s B (A % B)
 
+const aBroj = Number (a)
+const bBroj = Number (b)
+
+rezultat = aBroj%bBroj
 
         // Kraj 4. zadatka
         
@@ -49,6 +64,7 @@ document.getElementById('btnRun').addEventListener('click', () => {
         // Početak 5. zadatka
         // 5. Stroga jednakost: Jesu li A i B identični po vrijednosti i tipu (A === B)?
 
+rezultat = a===b
 
         // Kraj 5. zadatka
         
@@ -57,7 +73,12 @@ document.getElementById('btnRun').addEventListener('click', () => {
     if (task === '6') {
         // Početak 6. zadatka
         // 6. Relacijski operatori: Je li zbroj A i B veći od umnoška C i D?
+const aBroj = Number (a)
+const bBroj = Number (b)
+const cBroj = Number (c)
+const dBroj = Number (d)
 
+rezultat =(aBroj+bBroj)>(cBroj*dBroj)
 
         // Kraj 6. zadatka
         
@@ -66,6 +87,11 @@ document.getElementById('btnRun').addEventListener('click', () => {
     if (task === '7') {
         // Početak 7. zadatka
         // 7. Logički AND (&&): Je li A pozitivno I istovremeno B parno?
+
+    const aBroj = Number (a)
+    const bBroj = Number (b)
+
+    rezultat = (aBroj > 0) && (bBroj % 2 === 0)
 
 
         // Kraj 7. zadatka
@@ -76,7 +102,7 @@ document.getElementById('btnRun').addEventListener('click', () => {
         // Početak 8. zadatka
         // 8. Logički OR (||): Je li barem jedno od polja C ili D prazan string?
 
-
+    rezultat = c === '' || d === ''
         // Kraj 8. zadatka
         
     }
@@ -84,7 +110,14 @@ document.getElementById('btnRun').addEventListener('click', () => {
     if (task === '9') {
         // Početak 9. zadatka
         // 9. Operator typeof: Ispiši tip podatka za izraz (A * B)
+    const aBroj = Number (a)
+    const bBroj = Number (b)
 
+    const rez1=aBroj*bBroj
+
+    rezultat=typeof rez1
+    
+    // - jednostavnije -> rezultat=typeof (aBroj*bBroj)
 
         // Kraj 9. zadatka
         
@@ -93,7 +126,11 @@ document.getElementById('btnRun').addEventListener('click', () => {
     if (task === '10') {
         // Početak 10. zadatka
         // 10. Ternarni operator: Ako je A > B ispiši vrijednost C, inače ispiši D
+    const aBroj = Number (a)
+    const bBroj = Number (b)
+    
 
+        rezultat=aBroj > bBroj ? c : d
 
         // Kraj 10. zadatka
         
@@ -101,7 +138,9 @@ document.getElementById('btnRun').addEventListener('click', () => {
     if (task === '11') {
         // Početak 11. zadatka
         // 11. Inkrement / Dekrement: Izračunaj trik izraz (A++ - --B)
-
+    const aBroj = Number (a)
+    const bBroj = Number (b)
+    rezultat = aBroj++ - --bBroj
 
         // Kraj 11. zadatka
     }
@@ -110,6 +149,10 @@ document.getElementById('btnRun').addEventListener('click', () => {
         // Početak 12. zadatka
         // 12. Različito (!= vs !==): Usporedi A i B po vrijednosti (!=) i po tipu (!==)
 
+        rez1 = a != b
+        rez2 = a !== b
+       
+        rezultat= "Različito po vrijednosti: " + rez1 + ", Različito po tipu: " + rez2
 
         // Kraj 12. zadatka
     }
@@ -118,6 +161,7 @@ document.getElementById('btnRun').addEventListener('click', () => {
         // Početak 13. zadatka
         // 13. Nullish Coalescing (??): Ako je A prazan string, koristi default vrijednost iz B
 
+        let rezultat = (a ?? "") === "" ? b : a
 
         // Kraj 13. zadatka
     }
